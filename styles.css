@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+/********************* HEADER ***********************/
+
+.header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  padding-top: 20px;
+}
+ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style-type: none;
+  padding: 20px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: #0065fc;
+}
+li:hover {
+  border-top: 2px solid #0065fc;
+}
+
+/******************** SEARCH SECTION *******************/
+
+#search {
+  margin-left: 50px;
+}
+#search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar i {
+  border: 10px solid #f2f2f2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: #f2f2f2;
+}
+.search {
+  display: none;
+}
+input {
+  border: 2px solid #f2f2f2;
+  height: 2.7em;
+}
+.search-button {
+  border: 10px solid #0065fc;
+  background: #0065fc;
+  color: #ffffff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 2.7em;
+}
+
+/******************** FILTER SECTION **********************/
+
+#filter {
+  margin-left: 50px;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.price:hover,
+.family:hover,
+.romance:hover,
+.animal:hover {
+  background: #83a6db;
+  transition: ease-in-out 0.4s;
+}
+.price,
+.family,
+.romance,
+.animal {
+  display: flex;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+  border-left: none;
+  margin-right: 25px;
+  height: 2.8em;
+}
+.filter-title {
+  font-weight: bold;
+  margin-right: 15px;
+}
+.price i,
+.family i,
+.romance i,
+.animal i {
+  color: #0065fc;
+  background: #deebff;
+  border: 15px solid #deebff;
+  border-radius: 100%;
+}
+.price h3,
+.family h3,
+.romance h3,
+.animal h3 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.fa-info {
+  color: #0065fc;
+}
+.fa-circle {
+  color: #f2f2f2;
+}
+
+.info p {
+  padding-left: 10px;
+}
+
+/****************** Logement section *********************/
+
+#hebergements {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+#rooms {
+  background: #f2f2f2;
+  border-radius: 25px;
+  width: 900px;
+  height: 600px;
+}
+#main-rooms {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rooms {
+  border-radius: 25px;
+  width: 240px;
+  height: 235px;
+  padding: 0px 20px 0px 20px;
+}
+.rooms p,
+.rooms h4 {
+  margin: 5px;
+}
+.rooms img {
+  width: 235px;
+  height: 125px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover;
+}
+.rooms:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.2s;
+}
+.rooms-title {
+  margin: 20px 0px 20px 70px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.rooms a {
+  text-decoration: none;
+  color: black;
+}
+.fa-star {
+  color: #0065fc;
+  font-size: small;
+  padding-left: 5px;
+}
+.fa-star.grey {
+  color: #f2f2f2;
+  font-size: small;
+}
+.rooms figure {
+  margin: 0;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  box-shadow: 4px 4px 6px #aaa;
+}
+.rooms figcaption p {
+  font-size: 0.8em;
+}
+.rooms figcaption {
+  margin-left: 5px;
+}
+.more a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.more {
+  margin-left: 70px;
+}
+
+/************************** ASIDE ***************************/
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 25px;
+  float: right;
+  width: 400px;
+  height: 600px;
+  margin-right: 50px;
+}
+.aside:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.2s;
+}
+
+.aside img {
+  width: 125px;
+  height: 125px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  object-fit: cover;
+}
+.aside-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 0px 20px 0px 20px;
+  font-size: 1em;
+}
+.aside p {
+  margin-top: 24px;
+}
+.aside figure {
+  display: flex;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  box-shadow: 4px 4px 6px #aaa;
+}
+#aside {
+  display: flex;
+  flex-direction: column;
+}
+#aside a {
+  text-decoration: none;
+  color: black;
+}
+.aside figcaption {
+  padding-left: 5px;
+}
+.aside figcaption h4 {
+  margin: 5px 0;
+}
+.aside figcaption p {
+  margin-top: 10px;
+}
+.aside span {
+  margin-top: 15px;
+}
+
+/************** ACTIVITES ****************/
+
+#activites {
+  margin-top: 70px;
+}
+
+.activites h3 {
+  margin: 50px 50px 20px;
+}
+#allActivites {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+#allActivites img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover;
+  width: 273px;
+  margin: auto;
+}
+.vieuxp img,
+.calanques img {
+  height: 400px;
+}
+.pomegues img {
+  height: 200px;
+}
+.dame img,
+.longchamp img {
+  height: 150px;
+}
+.frioul img {
+  height: 110px;
+  align-content: center;
+}
+#allActivites a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+#allActivites h3 {
+  margin-left: 10px;
+}
+
+.vieuxp figure,
+.calanques figure,
+.pomegues figure,
+.frioul figure,
+.dame figure,
+.longchamp figure {
+  box-shadow: 8px 8px 12px #aaa;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+.pomegues,
+.dame {
+  padding-bottom: 2px;
+}
+
+.frioul:hover,
+.vieuxp:hover,
+.pomegues:hover,
+.calanques:hover,
+.dame:hover,
+.longchamp:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+}
+
+/****************** FOOTER ********************/
+
+#footer {
+  background: #f2f2f2;
+  display: flex;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  width: 50%;
+}
+.footer a {
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.footer h4 {
+  font-weight: bold;
+}
+
+/*********************** RESPONSIF **********************/
+
+@media screen and (max-device-width: 980px) {
+} ;

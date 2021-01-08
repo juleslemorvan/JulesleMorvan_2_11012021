@@ -30,7 +30,7 @@
       </nav>
     </header>
     <!------------------------ SEARCH SECTION -------------------------->
-    <section id="search">
+    <section class="search">
       <header class="main-title">
         <h1>Trouver votre hébergement pour des vacances de rêves</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -43,34 +43,34 @@
           value="Marseille, France"
         />
         <span class="button">
-          <button class="search-button" type="button">Rechercher</button></span
-        >
-        <span class="search"><i class="fas fa-search"></i></span>
+          <button class="search-button" type="button">Rechercher</button>
+        </span>
+        <span class="search"><i class="fas fa-search"></i> </span>
       </form>
     </section>
     <!------------------------- FILTER SECTION ---------------------->
-    <section id="filter">
-      <div class="filter">
-        <div class="filter-title">
-          <h2>Filtres</h2>
-        </div>
-        <div class="price">
+    <section class="filter">
+      <header class="filter-title">
+        <h2>Filtres</h2>
+      </header>
+      <ul class="filterList">
+        <li>
           <i class="fas fa-money-bill-wave"></i>
           <h3>Economique</h3>
-        </div>
-        <div class="family">
+        </li>
+        <li>
           <i class="fas fa-child"></i>
           <h3>Familial</h3>
-        </div>
-        <div class="romance">
+        </li>
+        <li>
           <i class="fas fa-heart"></i>
           <h3>Romantique</h3>
-        </div>
-        <div class="animal">
+        </li>
+        <li>
           <i class="fas fa-dog"></i>
           <h3>Animaux autorisés</h3>
-        </div>
-      </div>
+        </li>
+      </ul>
       <div class="info">
         <span class="fa-stack">
           <i class="fas fa-info fa-stack-1x"></i>
@@ -80,205 +80,204 @@
       </div>
     </section>
     <!--------------------- LOGEMENTS SECTION ---------------------->
-    <main id="hebergements">
-      <article id="rooms">
-        <div class="rooms-title">
-          <h3>Hébergements à Marseille</h3>
-        </div>
+    <section id="hebergements">
+      <header class="rooms">
+        <h3>Hébergements à Marseille</h3>
+      </header>
 
-        <!-- remplacer par des figures -->
-        <div id="main-rooms">
-          <div class="rooms">
-            <a href="">
-              <figure class="canebiere">
-                <img
-                  src="images/hebergements/4_small/canebiere.jpg"
-                  alt="auberge de la canebiere"
-                />
-                <figcaption>
-                  <h4>Auberge la Cannebière</h4>
-                  <p>Nuit à partir de <strong>25€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star grey"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="rooms">
-            <a href="">
-              <figure class="hotel-port">
-                <img
-                  src="images/hebergements/4_small/port.jpg"
-                  alt="hotel vieux port"
-                />
-                <figcaption>
-                  <h4>Hôtel du Vieux Port</h4>
-                  <p>Nuit à partir de <strong>52€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="rooms">
-            <a href="">
-              <figure class="mouettes">
-                <img
-                  src="images/hebergements/4_small/mouette.jpg"
-                  alt="hotel les mouettes"
-                />
-                <figcaption>
-                  <h4>Hôtel les Mouettes</h4>
-                  <p>Nuit à partir de <strong>76€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star grey"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="rooms">
-            <a href="">
-              <figure class="mer">
-                <img
-                  src="images/hebergements/4_small/mer.jpg"
-                  alt="hotel de la mer"
-                />
-                <figcaption>
-                  <h4>Hôtel de la mer</h4>
-                  <p>Nuit à partir de <strong>46€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star grey"></span
-                  ><span class="fas fa-star grey"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="rooms">
-            <a href="">
-              <figure class="panier">
-                <img
-                  src="images/hebergements/4_small/panier.jpg"
-                  alt="auberge le panier"
-                />
-                <figcaption>
-                  <h4>Auberge le Panier</h4>
-                  <p>Nuit à partir de <strong>23€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star grey"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="rooms">
-            <a href="">
-              <figure class="amina">
-                <img
-                  src="images/hebergements/4_small/amina.jpg"
-                  alt="hotel chez amina"
-                />
-                <figcaption>
-                  <h4>Hôtel Chez Amina</h4>
-                  <p>Nuit à partir de <strong>96€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-        </div>
-        <div class="more">
-          <a href=""> Afficher plus </a>
-        </div>
-      </article>
-      <!------------------------ ASIDE ------------------------->
-      <aside>
-        <div class="aside-title">
-          <h3>Les plus populaires</h3>
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <div id="aside">
-          <div class="aside">
-            <a href="">
-              <figure class="matin">
-                <img
-                  src="images/hebergements/4_small/soleil.jpg"
-                  alt="hotel le soleil du matin"
-                />
-                <figcaption>
-                  <h4>Hôtel Le soleil du matin</h4>
-                  <p>Nuit à partir de <strong>128€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="aside">
-            <a href="">
-              <figure class="chambre">
-                <img
-                  src="images/hebergements/4_small/eau.jpg"
-                  alt="chambres d'hotes au coeur de l'eau"
-                />
-                <figcaption>
-                  <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                  <p>Nuit à partir de <strong>71€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star grey"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="aside">
-            <a href="">
-              <figure class="bleublanc">
-                <img
-                  src="images/hebergements/4_small/bleu-blanc.jpg"
-                  alt="hotel tout bleu et blanc"
-                />
-                <figcaption>
-                  <h4>Hôtel Tout bleu et Blanc</h4>
-                  <p>Nuit à partir de <strong>68€</strong></p>
-                  <span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star"></span
-                  ><span class="fas fa-star grey"></span>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-        </div>
-      </aside>
-    </main>
+      <!-- remplacer par des figures -->
+      <div id="main-rooms">
+        <figure class="rooms">
+          <a href="">
+            <figure class="canebiere">
+              <img
+                src="images/hebergements/4_small/canebiere.jpg"
+                alt="auberge de la canebiere"
+              />
+              <figcaption>
+                <h4>Auberge la Cannebière</h4>
+                <p>Nuit à partir de <strong>25€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star grey"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+        <figure class="rooms">
+          <a href="">
+            <figure class="hotel-port">
+              <img
+                src="images/hebergements/4_small/port.jpg"
+                alt="hotel vieux port"
+              />
+              <figcaption>
+                <h4>Hôtel du Vieux Port</h4>
+                <p>Nuit à partir de <strong>52€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+        <figure class="rooms">
+          <a href="">
+            <figure class="mouettes">
+              <img
+                src="images/hebergements/4_small/mouette.jpg"
+                alt="hotel les mouettes"
+              />
+              <figcaption>
+                <h4>Hôtel les Mouettes</h4>
+                <p>Nuit à partir de <strong>76€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star grey"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+        <figure class="rooms">
+          <a href="">
+            <figure class="mer">
+              <img
+                src="images/hebergements/4_small/mer.jpg"
+                alt="hotel de la mer"
+              />
+              <figcaption>
+                <h4>Hôtel de la mer</h4>
+                <p>Nuit à partir de <strong>46€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star grey"></span
+                ><span class="fas fa-star grey"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+        <figure class="rooms">
+          <a href="">
+            <figure class="panier">
+              <img
+                src="images/hebergements/4_small/panier.jpg"
+                alt="auberge le panier"
+              />
+              <figcaption>
+                <h4>Auberge le Panier</h4>
+                <p>Nuit à partir de <strong>23€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star grey"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+        <figure class="rooms">
+          <a href="">
+            <figure class="amina">
+              <img
+                src="images/hebergements/4_small/amina.jpg"
+                alt="hotel chez amina"
+              />
+              <figcaption>
+                <h4>Hôtel Chez Amina</h4>
+                <p>Nuit à partir de <strong>96€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+      </div>
+      <span class="more">
+        <a href=""> Afficher plus </a>
+      </span>
+    </section>
+    <!------------------------ POPULAR ------------------------->
+    <section id="popular">
+      <header class="popular-title">
+        <h3>Les plus populaires</h3>
+        <i class="fas fa-chart-line"></i>
+      </header>
+      <div class="allPopularCard">
+        <figure class="popularCard">
+          <a href="">
+            <figure class="matin">
+              <img
+                src="images/hebergements/4_small/soleil.jpg"
+                alt="hotel le soleil du matin"
+              />
+              <figcaption>
+                <h4>Hôtel Le soleil du matin</h4>
+                <p>Nuit à partir de <strong>128€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+        <figure class="popularCard">
+          <a href="">
+            <figure class="chambre">
+              <img
+                src="images/hebergements/4_small/eau.jpg"
+                alt="chambres d'hotes au coeur de l'eau"
+              />
+              <figcaption>
+                <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                <p>Nuit à partir de <strong>71€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star grey"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+        <figure class="popularCard">
+          <a href="">
+            <figure class="bleublanc">
+              <img
+                src="images/hebergements/4_small/bleu-blanc.jpg"
+                alt="hotel tout bleu et blanc"
+              />
+              <figcaption>
+                <h4>Hôtel Tout bleu et Blanc</h4>
+                <p>Nuit à partir de <strong>68€</strong></p>
+                <span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star"></span
+                ><span class="fas fa-star grey"></span>
+              </figcaption>
+            </figure>
+          </a>
+        </figure>
+      </div>
+    </section>
+
     <!-------------------------- ACTIVITIES SECTION ---------------------->
     <section id="activites">
-      <div class="activites">
+      <header class="activites">
         <h3>Activités à Marseille</h3>
-      </div>
+      </header>
       <div id="allActivites">
         <div class="vieuxp">
           <a href="">

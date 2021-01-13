@@ -49,9 +49,8 @@
           value="Marseille, France"
         />
         <span class="button">
-          <input class="search-button" type="submit" />Rechercher
+          <button class="search-button" type="button">Rechercher</button>
         </span>
-        <span class="search"><i class="fas fa-search"></i> </span>
       </form>
     </section>
     <!------------------------- FILTER SECTION ---------------------->
@@ -84,10 +83,8 @@
     <!--------------------- LOGEMENTS SECTION ---------------------->
     <section id="hebergements">
       <h3>Hébergements à Marseille</h3>
-
-      <!-- remplacer par des figures -->
       <div class="main-rooms">
-        <figure class="rooms">
+        <article class="rooms">
           <a href="">
             <figure class="canebiere">
               <img
@@ -105,8 +102,8 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
-        <figure class="rooms">
+        </article>
+        <article class="rooms">
           <a href="">
             <figure class="hotel-port">
               <img
@@ -124,8 +121,8 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
-        <figure class="rooms">
+        </article>
+        <article class="rooms">
           <a href="">
             <figure class="mouettes">
               <img
@@ -143,8 +140,8 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
-        <figure class="rooms">
+        </article>
+        <article class="rooms">
           <a href="">
             <figure class="mer">
               <img
@@ -162,8 +159,8 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
-        <figure class="rooms">
+        </article>
+        <article class="rooms">
           <a href="">
             <figure class="panier">
               <img
@@ -181,8 +178,8 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
-        <figure class="rooms">
+        </article>
+        <article class="rooms">
           <a href="">
             <figure class="amina">
               <img
@@ -200,7 +197,7 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
+        </article>
       </div>
       <span class="more">
         <a href=""> Afficher plus </a>
@@ -213,7 +210,7 @@
         <i class="fas fa-chart-line"></i>
       </header>
       <div class="allPopularCard">
-        <figure class="popularCard">
+        <article class="popularCard">
           <a href="">
             <figure class="matin">
               <img
@@ -231,8 +228,8 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
-        <figure class="popularCard">
+        </article>
+        <article class="popularCard">
           <a href="">
             <figure class="chambre">
               <img
@@ -250,8 +247,8 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
-        <figure class="popularCard">
+        </article>
+        <article class="popularCard">
           <a href="">
             <figure class="bleublanc">
               <img
@@ -269,7 +266,7 @@
               </figcaption>
             </figure>
           </a>
-        </figure>
+        </article>
       </div>
     </section>
 
@@ -279,7 +276,7 @@
         <h3>Activités à Marseille</h3>
       </header>
       <div id="allActivites">
-        <div class="vieuxp">
+        <article class="vieuxp">
           <a href="">
             <figure>
               <img
@@ -291,9 +288,9 @@
               </figcaption>
             </figure>
           </a>
-        </div>
+        </article>
         <div class="pom-fri">
-          <div class="pomegues">
+          <article class="pomegues">
             <a href="">
               <figure>
                 <img
@@ -305,36 +302,37 @@
                 </figcaption>
               </figure>
             </a>
-          </div>
-          <div class="frioul">
+          </article>
+          <article class="frioul">
             <a href="">
               <figure>
+                <img
+                  src="images/activites/4_small/frioul.jpg"
+                  alt="iles du frioul"
+                />
                 <figcaption>
-                  <img
-                    src="images/activites/4_small/frioul.jpg"
-                    alt="iles du frioul"
-                  />
                   <h3>Îles du Frioul</h3>
                 </figcaption>
               </figure>
             </a>
-          </div>
+          </article>
         </div>
         <div class="calanques">
           <a href="">
             <figure>
+              x
+              <img
+                src="images/activites/4_small/calanques.jpg"
+                alt="parc national des calanques"
+              />
               <figcaption>
-                <img
-                  src="images/activites/4_small/calanques.jpg"
-                  alt="parc national des calanques"
-                />
                 <h3>Parc National des Calanques</h3>
               </figcaption>
             </figure>
           </a>
         </div>
         <div class="dame-long">
-          <div class="dame">
+          <article class="dame">
             <a href="">
               <figure>
                 <img
@@ -346,8 +344,8 @@
                 </figcaption>
               </figure>
             </a>
-          </div>
-          <div class="longchamp">
+          </article>
+          <article class="longchamp">
             <a href="">
               <figure>
                 <img
@@ -359,7 +357,7 @@
                 </figcaption>
               </figure>
             </a>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -374,17 +372,21 @@
         </ul>
       </section>
 
-      <ul class="noshebergements">
-        <li class="footerTitle">Nos hébergements</li>
-        <li><a href="">Charte qualité</a></li>
-        <li><a href="">Soumettre votre hôtel</a></li>
-      </ul>
+      <section>
+        <h3 class="footerTitle">Nos hébergements</h3>
+        <ul class="noshebergements">
+          <li><a href="">Charte qualité</a></li>
+          <li><a href="">Soumettre votre hôtel</a></li>
+        </ul>
+      </section>
 
-      <ul class="assistance">
-        <li class="footerTitle">Assistance</li>
-        <li><a href="">Centre d'aide</a></li>
-        <li><a href="">Nous contacter</a></li>
-      </ul>
+      <section>
+        <h3 class="footerTitle">Assistance</h3>
+        <ul class="assistance">
+          <li><a href="">Centre d'aide</a></li>
+          <li><a href="">Nous contacter</a></li>
+        </ul>
+      </section>
     </footer>
   </body>
 </html>

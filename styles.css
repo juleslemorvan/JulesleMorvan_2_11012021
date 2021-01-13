@@ -7,54 +7,53 @@ html {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   margin: 0;
-}
+} 
 
 body {
   width: 100%;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   margin: 0;
-}
+} 
 /********************* HEADER ***********************/
 
-.header {
+ nav {
   display: flex;
   margin-left: 50px;
   margin-right: 50px;
 }
-.navbar {
+
+nav img {
+  margin-top: 20px;
+}
+
+nav ul {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  padding-top: 20px;
+  list-style-type: none;
 }
 
-header a {
-  padding-top: 20px;
-}
-ul {
-  display: flex;
-}
-.navbar ul li {
-  list-style-type: none;
-  padding: 20px;
-}
-li a {
+nav li a {
   text-decoration: none;
   color: black;
+  margin-right: 30px;
+  padding-top: 25px;
 }
 
-.navbar li a:hover {
+nav li a:hover {
   color: #0065fc;
-}
-.navbar li:hover {
   border-top: 2px solid #0065fc;
 }
 
+
 /******************** SEARCH SECTION *******************/
 
-#search {
+.main-title {
   margin-left: 50px;
 }
+/*
 #search-bar {
   display: flex;
   align-items: center;
@@ -80,11 +79,11 @@ input {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   height: 2.7em;
-}
+}  */
 
 /******************** FILTER SECTION **********************/
 
-#filter {
+/* /* #filter {
   margin-left: 50px;
 }
 .filter {
@@ -149,7 +148,7 @@ input {
 
 /****************** Logement section *********************/
 
-#hebergements {
+/* #hebergements {
   display: flex;
   justify-content: space-between;
   margin-left: 50px;
@@ -230,7 +229,7 @@ input {
 
 /************************** ASIDE ***************************/
 
-aside {
+/* aside {
   display: flex;
   flex-direction: column;
   background: #f2f2f2;
@@ -289,11 +288,11 @@ aside {
 }
 .aside span {
   margin-top: 15px;
-}
+} */
 
 /************** ACTIVITES ****************/
 
-#activites {
+/* #activites {
   margin-top: 70px;
 }
 
@@ -351,8 +350,8 @@ aside {
 .pomegues,
 .dame {
   padding-bottom: 2px;
-}
-
+} */
+/* 
 .frioul:hover,
 .vieuxp:hover,
 .pomegues:hover,
@@ -361,11 +360,11 @@ aside {
 .longchamp:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
-}
+} */
 
 /****************** FOOTER ********************/
 
-footer {
+/* footer {
   background: #f2f2f2;
   display: flex;
   width: 100%;
@@ -382,13 +381,12 @@ footer li {
   text-decoration: none;
   margin-bottom: 15px;
   color: black;
-}
+} */
 
-.footerTitle {
+/* .footerTitle {
   font-weight: bold;
-}
+}  */
 
 /*********************** RESPONSIF **********************/
 
-@media screen and (max-device-width: 980px) {
-} ;
+/* @media screen and (max-device-width: 980px) 

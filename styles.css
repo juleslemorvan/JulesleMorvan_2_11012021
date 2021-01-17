@@ -3,58 +3,61 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 } 
 
-body {
-  width: 100%;
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  margin: 0;
-} 
+li {
+list-style-type: none;
+text-decoration: none;
+}
+
 /********************* HEADER ***********************/
-
- nav {
-  display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-nav img {
-  margin-top: 20px;
-}
-
-nav ul {
+.header {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
-  padding-top: 20px;
-  list-style-type: none;
+  align-items: center;
+  padding: 20px 50px;
 }
 
-nav li a {
+.logo{
+ margin-right: auto;
+ height: 50px;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.menu li a {
   text-decoration: none;
   color: black;
-  margin-right: 30px;
-  padding-top: 25px;
 }
 
-nav li a:hover {
-  color: #0065fc;
-  border-top: 2px solid #0065fc;
+.menu li a:hover{
+  color: #0065FC;
+  padding-top: 40px;
+  border-top: 3px solid #0065FC;
 }
 
+.signIn {
+  font-weight: bold;
+}
 
 /******************** SEARCH SECTION *******************/
 
-.main-title {
+
+.search {
   margin-left: 50px;
 }
-/*
-#search-bar {
+.mainTitle {
+margin-left: 50px;
+}
+
+.search-bar {
   display: flex;
   align-items: center;
 }
@@ -64,44 +67,43 @@ nav li a:hover {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   background: #f2f2f2;
+  height: 2em;
+  width: 30px;
 }
-.search {
-  display: none;
-}
+
 input {
   border: 2px solid #f2f2f2;
-  height: 2.7em;
+  height: 3.7em;
+  font-weight: bold;
+  width: 250px;
 }
 .search-button {
   border: 10px solid #0065fc;
   background: #0065fc;
   color: #ffffff;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  height: 2.7em;
-}  */
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  height: 3.7em;
+  width: 150px;
+}  
+
 
 /******************** FILTER SECTION **********************/
 
-/* /* #filter {
+ .filter {
+  display: flex;
   margin-left: 50px;
 }
-.filter {
+
+.filter h2 {
   display: flex;
-  align-items: center;
-  margin-top: 30px;
+  margin-top: 25px;
 }
-.price:hover,
-.family:hover,
-.romance:hover,
-.animal:hover {
-  background: #83a6db;
-  transition: ease-in-out 0.4s;
+.filter ul {
+  display: flex;
 }
-.price,
-.family,
-.romance,
-.animal {
+
+.filterList li{
   display: flex;
   align-items: center;
   border: 2px solid #f2f2f2;
@@ -110,23 +112,19 @@ input {
   margin-right: 25px;
   height: 2.8em;
 }
-.filter-title {
-  font-weight: bold;
-  margin-right: 15px;
+
+.filterList li:hover {
+  background: #83a6db;
+  transition: ease-in-out 0.4s;
 }
-.price i,
-.family i,
-.romance i,
-.animal i {
+
+.filterList i {
   color: #0065fc;
   background: #deebff;
   border: 15px solid #deebff;
   border-radius: 100%;
 }
-.price h3,
-.family h3,
-.romance h3,
-.animal h3 {
+.filterList h3 {
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -134,6 +132,7 @@ input {
   display: flex;
   align-items: center;
   padding: 10px;
+  margin-left: 35px;
 }
 .fa-info {
   color: #0065fc;
@@ -148,29 +147,43 @@ input {
 
 /****************** Logement section *********************/
 
-/* #hebergements {
+.container {
   display: flex;
   justify-content: space-between;
   margin-left: 50px;
+  
 }
-#rooms {
+ #hebergements {
+  background: #F2F2F2;
+  border-radius: 25px;    
+  width: 70%;
+  height: 600px;
+}
+
+#hebergements h3 {
+  margin-left: 50px;
+  padding: 20px;
+}
+/* #rooms {
   background: #f2f2f2;
   border-radius: 25px;
   width: 900px;
   height: 600px;
-}
-#main-rooms {
+} */
+.main-rooms {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;    
   flex-wrap: wrap;
-  justify-content: center;
+  margin: 10px;
+  
 }
 
 .rooms {
   border-radius: 25px;
-  width: 240px;
-  height: 235px;
-  padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
 }
 .rooms p,
 .rooms h4 {
@@ -227,31 +240,38 @@ input {
   margin-left: 70px;
 }
 
-/************************** ASIDE ***************************/
+/************************** POPULAR ***************************/
 
-/* aside {
+
+#popular {
   display: flex;
   flex-direction: column;
   background: #f2f2f2;
   border-radius: 25px;
   float: right;
-  width: 400px;
+  width: 25%;
   height: 600px;
   margin-right: 50px;
 }
-.aside:hover {
+
+.allPopularCard {
+display: flex;
+  flex-direction: column;
+}
+
+.popularCard:hover {
   transform: scale(1.2);
   transition: ease-in-out 0.2s;
 }
 
-.aside img {
+.popularCard img {
   width: 125px;
-  height: 125px;
+  height: 135px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   object-fit: cover;
 }
-.aside-title {
+.popularTitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -259,40 +279,37 @@ input {
   padding: 0px 20px 0px 20px;
   font-size: 1em;
 }
-.aside p {
+.popularCard p {
   margin-top: 24px;
 }
-.aside figure {
+.popularCard figure {
   display: flex;
   background: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
 }
-#aside {
-  display: flex;
-  flex-direction: column;
-}
-#aside a {
+
+.popularCard a {
   text-decoration: none;
   color: black;
 }
-.aside figcaption {
+.popularCard figcaption {
   padding-left: 5px;
 }
-.aside figcaption h4 {
+.popularCard figcaption h4 {
   margin: 5px 0;
 }
-.aside figcaption p {
+.popularCard figcaption p {
   margin-top: 10px;
 }
-.aside span {
+.popularCard span {
   margin-top: 15px;
-} */
+} 
 
 /************** ACTIVITES ****************/
 
-/* #activites {
+#activites {
   margin-top: 70px;
 }
 
@@ -350,8 +367,8 @@ input {
 .pomegues,
 .dame {
   padding-bottom: 2px;
-} */
-/* 
+} 
+
 .frioul:hover,
 .vieuxp:hover,
 .pomegues:hover,
@@ -360,32 +377,39 @@ input {
 .longchamp:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
-} */
+} 
 
 /****************** FOOTER ********************/
 
-/* footer {
-  background: #f2f2f2;
-  display: flex;
-  width: 100%;
+footer
+{
+    background:#F2F2F2;
+    margin-top: 65px;
+    padding-bottom: 10px;
 }
-footer ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px;
-  width: 50%;
-  list-style-type: none;
+.footer
+{
+    display: flex;
+    justify-content: flex-start;
+    
 }
-footer li {
-  text-decoration: none;
-  margin-bottom: 15px;
-  color: black;
-} */
+.footer1, .footer2, .footer3
+{
+    margin: 25px 170px 0 0;
+    list-style-type: none;
+}
+.footer li
+{
+    margin-bottom: 8px;
+}
+.footer a
+{
+    text-decoration: none;
+    color: black;
+}
 
-/* .footerTitle {
-  font-weight: bold;
-}  */
+
+
 
 /*********************** RESPONSIF **********************/
 

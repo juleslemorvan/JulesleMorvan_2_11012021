@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 
-html {
+html,
+body {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 li {
-list-style-type: none;
-text-decoration: none;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /********************* HEADER ***********************/
@@ -22,9 +23,9 @@ text-decoration: none;
   padding: 20px 50px;
 }
 
-.logo{
- margin-right: auto;
- height: 50px;
+.logo {
+  margin-right: auto;
+  height: 50px;
 }
 
 .menu li {
@@ -37,10 +38,10 @@ text-decoration: none;
   color: black;
 }
 
-.menu li a:hover{
-  color: #0065FC;
+.menu li a:hover {
+  color: #0065fc;
   padding-top: 40px;
-  border-top: 3px solid #0065FC;
+  border-top: 3px solid #0065fc;
 }
 
 .signIn {
@@ -49,12 +50,11 @@ text-decoration: none;
 
 /******************** SEARCH SECTION *******************/
 
-
 .search {
   margin-left: 50px;
 }
 .mainTitle {
-margin-left: 50px;
+  margin-left: 50px;
 }
 
 .search-bar {
@@ -76,7 +76,9 @@ input {
   height: 3.7em;
   font-weight: bold;
   width: 250px;
+  padding-left: 20px;
 }
+
 .search-button {
   border: 10px solid #0065fc;
   background: #0065fc;
@@ -85,12 +87,11 @@ input {
   border-bottom-right-radius: 12px;
   height: 3.7em;
   width: 150px;
-}  
-
+}
 
 /******************** FILTER SECTION **********************/
 
- .filter {
+.filter {
   display: flex;
   margin-left: 50px;
 }
@@ -103,7 +104,7 @@ input {
   display: flex;
 }
 
-.filterList li{
+.filterList li {
   display: flex;
   align-items: center;
   border: 2px solid #f2f2f2;
@@ -151,11 +152,10 @@ input {
   display: flex;
   justify-content: space-between;
   margin-left: 50px;
-  
 }
- #hebergements {
-  background: #F2F2F2;
-  border-radius: 25px;    
+#hebergements {
+  background: #f2f2f2;
+  border-radius: 25px;
   width: 70%;
   height: 600px;
 }
@@ -164,26 +164,20 @@ input {
   margin-left: 50px;
   padding: 20px;
 }
-/* #rooms {
-  background: #f2f2f2;
-  border-radius: 25px;
-  width: 900px;
-  height: 600px;
-} */
+
 .main-rooms {
   display: flex;
   justify-content: space-around;
-  align-items: center;    
+  align-items: center;
   flex-wrap: wrap;
   margin: 10px;
-  
 }
 
 .rooms {
   border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 .rooms p,
 .rooms h4 {
@@ -242,7 +236,6 @@ input {
 
 /************************** POPULAR ***************************/
 
-
 #popular {
   display: flex;
   flex-direction: column;
@@ -255,7 +248,7 @@ input {
 }
 
 .allPopularCard {
-display: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -305,7 +298,7 @@ display: flex;
 }
 .popularCard span {
   margin-top: 15px;
-} 
+}
 
 /************** ACTIVITES ****************/
 
@@ -367,7 +360,7 @@ display: flex;
 .pomegues,
 .dame {
   padding-bottom: 2px;
-} 
+}
 
 .frioul:hover,
 .vieuxp:hover,
@@ -377,40 +370,33 @@ display: flex;
 .longchamp:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
-} 
+}
 
 /****************** FOOTER ********************/
 
-footer
-{
-    background:#F2F2F2;
-    margin-top: 65px;
-    padding-bottom: 10px;
+footer {
+  background: #f2f2f2;
+  margin-top: 65px;
+  padding-bottom: 10px;
 }
-.footer
-{
-    display: flex;
-    justify-content: flex-start;
-    
+.footer {
+  display: flex;
+  justify-content: flex-start;
 }
-.footer1, .footer2, .footer3
-{
-    margin: 25px 170px 0 0;
-    list-style-type: none;
+.footer1,
+.footer2,
+.footer3 {
+  margin: 25px 170px 0 0;
+  list-style-type: none;
 }
-.footer li
-{
-    margin-bottom: 8px;
+.footer li {
+  margin-bottom: 8px;
 }
-.footer a
-{
-    text-decoration: none;
-    color: black;
+.footer a {
+  text-decoration: none;
+  color: black;
 }
 
+/*********************** RESPONSIF  **********************/
 
-
-
-/*********************** RESPONSIF **********************/
-
-/* @media screen and (max-device-width: 980px) 
+/* @media screen and (max-device-width: 980px)  */

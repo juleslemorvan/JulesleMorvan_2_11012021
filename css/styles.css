@@ -40,7 +40,7 @@ li {
 
 .menu li a:hover {
   color: #0065fc;
-  padding-top: 40px;
+  padding-top: 30px;
   border-top: 3px solid #0065fc;
 }
 
@@ -71,12 +71,19 @@ li {
   width: 30px;
 }
 
+.fa-map-marker-alt:before {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
 input {
   border: 2px solid #f2f2f2;
-  height: 3.7em;
+  height: 52px;
   font-weight: bold;
   width: 250px;
   padding-left: 20px;
+  font-size: 15px;
 }
 
 .search-button {
@@ -151,13 +158,13 @@ input {
 .container {
   display: flex;
   justify-content: space-between;
-  margin-left: 50px;
+  margin: 0 50px 0 50px;
 }
 #hebergements {
   background: #f2f2f2;
   border-radius: 25px;
   width: 70%;
-  height: 600px;
+  height: 640px;
 }
 
 #hebergements h3 {
@@ -215,7 +222,7 @@ input {
 .rooms figure {
   margin: 0;
   background: #ffffff;
-  border: 2px solid #ffffff;
+  border: 4px solid #ffffff;
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
 }
@@ -224,6 +231,10 @@ input {
 }
 .rooms figcaption {
   margin-left: 5px;
+}
+
+.fa-star {
+  padding-bottom: 10px;
 }
 .more a {
   text-decoration: none;
@@ -236,18 +247,22 @@ input {
 
 /************************** POPULAR ***************************/
 
-#popular {
+.popular {
   display: flex;
   flex-direction: column;
   background: #f2f2f2;
   border-radius: 25px;
   float: right;
   width: 25%;
-  height: 600px;
-  margin-right: 50px;
+  height: 640px;
+  margin: 0 0 0 50px;
 }
 
 .allPopularCard {
+  display: flex;
+  flex-direction: column;
+}
+.popularCard {
   display: flex;
   flex-direction: column;
 }
@@ -269,7 +284,7 @@ input {
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
-  padding: 0px 20px 0px 20px;
+  padding: 15px 20px 0px 20px;
   font-size: 1em;
 }
 .popularCard p {
@@ -278,7 +293,7 @@ input {
 .popularCard figure {
   display: flex;
   background: #ffffff;
-  border: 2px solid #ffffff;
+  border: 4px solid #ffffff;
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
 }
@@ -295,9 +310,10 @@ input {
 }
 .popularCard figcaption p {
   margin-top: 10px;
+  font-size: 12px;
 }
 .popularCard span {
-  margin-top: 15px;
+  margin-top: 7px;
 }
 
 /************** ACTIVITES ****************/
@@ -399,4 +415,5 @@ footer {
 
 /*********************** RESPONSIF  **********************/
 
-/* @media screen and (max-device-width: 980px)  */
+@media screen and (max-device-width: 1350px) {
+}

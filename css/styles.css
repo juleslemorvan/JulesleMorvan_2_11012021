@@ -38,6 +38,7 @@ li a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 60px;
 }
 li a:hover {
   color: #0065fc;
@@ -103,7 +104,7 @@ li {
   height: 52px;
   width: 52px;
 }
-.search {
+.searchLoupe {
   display: none;
 }
 
@@ -355,8 +356,6 @@ aside {
   justify-content: space-between;
 }
 #main-visit {
-  display: -o-flexblox;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
@@ -424,14 +423,10 @@ aside {
 #footer {
   margin-top: 40px;
   background: #f2f2f2;
-  display: -o-flexblox;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 .footer {
-  display: -o-flexblox;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -440,6 +435,7 @@ aside {
 .footer a {
   text-decoration: none;
   color: black;
+  padding-top: 10px;
 }
 .footer a:visited {
   text-decoration: none;
@@ -510,7 +506,7 @@ aside {
     padding-left: 15px;
     margin: 0;
   }
-  .search-button {
+  .searchLoupe {
     display: none;
   }
   .search {
@@ -535,6 +531,7 @@ aside {
     justify-content: flex-end;
     flex-flow: row wrap;
   }
+
   #filter {
     padding-left: 15px;
     margin: 0;
@@ -547,6 +544,12 @@ aside {
   .filter-title {
     width: 100%;
     margin: 0;
+  }
+
+  .fa-map-marker-alt:before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .price,
   .family,
@@ -723,6 +726,8 @@ aside {
     margin: auto;
   }
 }
+
+/* TRES GRAND ECRAN */
 @media screen and (min-width: 1600px) {
   body {
     margin: auto;
@@ -739,5 +744,60 @@ aside {
   footer {
     max-width: 100rem;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .menu {
+    margin: 0;
+  }
+
+  #search-bar {
+    padding-top: 30px;
+  }
+  #search-bar span {
+    margin-right: -4px;
+  }
+  #search-bar input {
+    height: 55px;
+  }
+  .search-button {
+    display: none;
+  }
+  .searchLoupe {
+    display: flex;
+    cursor: pointer;
+    border: 10px solid #0065fc;
+    background: #0065fc;
+    color: #ffffff;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+    height: 20px;
+  }
+  .fa-search {
+    font-size: 20px;
+    padding-top: 9px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+  }
+  .logo span {
+    top: 20px;
+  }
+  .sign-in {
+    padding-top: 20px;
+    margin-right: 20px;
+  }
+  .sign-in a {
+    padding: 0;
+  }
+  #main-rooms {
+    width: 100%;
+    margin: 0;
+  }
+  .rooms figure {
+    width: 22.5em;
   }
 }

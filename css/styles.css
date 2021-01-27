@@ -463,12 +463,14 @@ aside {
   .logo {
     display: flex;
     align-items: flex-end;
+    padding-left: 20px;
   }
   .logo span {
     margin: 0;
     width: 50%;
     position: absolute;
     padding-left: 15px;
+    top: 20px;
   }
   .menu,
   #navbar {
@@ -502,8 +504,14 @@ aside {
     border-top: none;
     border-bottom: 3px solid #0065fc;
   }
+  #main-title p {
+    margin-top: 0px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
   #search {
     padding-left: 15px;
+    padding-top: 30px;
     margin: 0;
   }
   .searchLoupe {
@@ -515,13 +523,16 @@ aside {
     border-radius: 10px;
     display: flex;
   }
+  #search-bar span {
+    height: 52px;
+  }
   .fa-search {
     color: #ffffff;
   }
   .sign-in {
     order: -2;
     display: flex;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   .main-container {
     width: 100%;
@@ -670,6 +681,9 @@ aside {
     justify-content: space-between;
     padding: 0;
   }
+  #search-bar span {
+    height: 52px;
+  }
   .filter {
     display: flex;
     justify-content: flex-start;
@@ -750,15 +764,24 @@ aside {
 @media screen and (max-width: 376px) {
   .menu {
     margin: 0;
+    width: 100%;
+  }
+  #main-title p {
+    font-weight: 500;
   }
 
   #search-bar {
     padding-top: 30px;
   }
   #search-bar span {
-    margin-right: -4px;
+    margin-right: -10px;
+    height: 55px;
   }
   #search-bar input {
+    height: 55px;
+  }
+  .search-bar i {
+    display: flex;
     height: 55px;
   }
   .search-button {
@@ -783,12 +806,18 @@ aside {
     padding-left: 5px;
     padding-bottom: 5px;
   }
+  .price,
+  .family,
+  .romantic,
+  .animal {
+    margin-right: 0;
+  }
   .logo span {
     top: 20px;
   }
   .sign-in {
     padding-top: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
   }
   .sign-in a {
     padding: 0;
@@ -799,5 +828,14 @@ aside {
   }
   .rooms figure {
     width: 22.5em;
+  }
+  .footer {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+
+  .footer h4 {
+    margin-left: 6px;
   }
 }

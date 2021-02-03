@@ -366,8 +366,6 @@ aside {
   width: 300px;
   margin: auto;
   opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 .vieuxp img,
 .calanques img {
@@ -411,7 +409,7 @@ aside {
 .longchamp h3 {
   padding-left: 10px;
 }
-#main-visit img:hover {
+#main-visit figure:hover {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
@@ -484,6 +482,9 @@ aside {
     max-width: 100rem;
     margin: auto;
   }
+  #search-bar span {
+    height: 52px;
+  }
   .search-bar i {
     display: flex;
   }
@@ -495,6 +496,10 @@ aside {
   }
   #rooms {
     margin-right: 15px;
+  }
+  .rooms:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
   }
   .main-container {
     max-width: 100rem;
@@ -801,7 +806,7 @@ aside {
 
 /* RESPONSIF SMARTPHONE */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 426px) {
   .menu {
     margin: 0;
     width: 100%;
@@ -847,11 +852,11 @@ aside {
     padding-bottom: 5px;
   }
   .price,
-  .family,
   .romantic,
   .animal {
     margin-right: 0;
   }
+
   .logo span {
     top: 20px;
   }
@@ -884,5 +889,20 @@ aside {
 
   .footer h4 {
     margin-left: 6px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #main-title h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  #main-title p {
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  #search-bar input {
+    width: 198px;
   }
 }

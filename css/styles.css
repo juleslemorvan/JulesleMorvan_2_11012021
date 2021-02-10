@@ -238,12 +238,9 @@ li {
   border-top-right-radius: 25px;
   object-fit: cover;
   width: 100%;
-  height: 8em;
+  height: 130px;
 }
-.rooms figure {
-  transform: scale(1.05);
-  transition: 0.3s ease-in-out;
-}
+
 .rooms-title {
   padding: 20px 0px 20px 20px;
   font-weight: bolder;
@@ -268,22 +265,28 @@ li {
   border: 4px solid #ffffff;
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
-  width: 17.5em;
+  width: 270px;
   height: 14em;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
 }
-.rooms figcaption p {
-  font-size: 0.8em;
-}
+
 .rooms figcaption {
   margin-left: 5px;
 }
+
+.rooms figcaption p {
+  font-size: 0.8em;
+}
+
+.more {
+  padding: 20px;
+}
+
 .more a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-}
-.more {
-  padding: 20px;
 }
 
 /* ASIDE */
@@ -392,7 +395,7 @@ aside {
 .frioul figure,
 .dame figure,
 .longchamp figure {
-  box-shadow: 8px 8px 12px #aaa;
+  box-shadow: 2px 2px 12px #aaa;
   border: 1px solid transparent;
   border-radius: 25px;
   box-sizing: border-box;
@@ -768,7 +771,7 @@ aside {
     width: 100%;
   }
   #main-visit figure {
-    margin: 10px;
+    margin: 15px;
   }
   .vieuxp,
   .pom-fri,
@@ -854,6 +857,10 @@ aside {
   .price,
   .romantic,
   .animal {
+    margin-right: 0;
+  }
+
+  .family {
     margin-right: 0;
   }
 
